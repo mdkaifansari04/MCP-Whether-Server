@@ -13,7 +13,7 @@ const demoServer = new McpServer({
 async function getWhetherDataByCityName(city) {
   try {
     const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WHETHER_API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f696fc6ed8a09dcc7d64b8b4c73f6ad4`
     );
 
     if (!response) return { whether: null, error: "city not found" };
